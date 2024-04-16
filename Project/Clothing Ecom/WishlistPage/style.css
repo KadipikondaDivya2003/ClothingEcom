@@ -105,72 +105,13 @@ header{
 .container td{
     border-bottom: 1px solid grey;
 }
+td input[type="text"]{
+    height:10px;
+    width:30px;
+    margin:0px;
+}
 td h4{
     color: rgba(15, 63, 43, 0.986);
-}
-
-.mainbutton{
-    display:flex;
-    margin-left: 820px;
-    gap:15px;
-}
-.mainbutton .button{
-    background-color: rgba(15, 63, 43, 0.986);
-    color: white;
-    padding:10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    border: none;
-    font-size: small;
-}
-.fingerprint{
-    margin-left: 600px;
-}
-.Cart{
-    display: flex;
-    width:35%;
-    margin: 20px 50px;
-    gap:15px;
-}
-.calculate h3,.Coupon h4{
-    margin-bottom: 0px;
-    margin-top: 30px;
-}
-.calculate .address1{
-    margin-left: 0px;
-    width:97%;
-}
-.calculate .address2{
-    display: flex;
-    gap:10px;
-    width:600px;
-}
-.calculate .address2 input{
-    margin-left: 0px;
-}
-.calculate button,.Total button{
-    background-color: rgba(15, 63, 43, 0.986);
-    color: white;
-    padding:10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    border: none;
-}
-.Coupon .address3{
-    margin-left: 0px;
-}
-.Total{
-    border:1px solid grey;
-    padding:20px;
-    margin-top: 30px;
-    height: 250px;
-}
-.Total h3{
-    margin-top: 0px;
-}
-.Total table{
-    width:480px;
-    
 }
 .footer-head{
     display: flex;

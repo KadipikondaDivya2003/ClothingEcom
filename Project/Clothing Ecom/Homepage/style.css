@@ -1,6 +1,10 @@
 body{
     margin:0px;
 }
+.header{
+    display :flex;
+    
+}
 .logo img{
     margin-left: 10px;
     margin-top: 5px;
@@ -38,14 +42,6 @@ header .fa-magnifying-glass{
     right:164px;
     top: 36px;
 }
-header .fa-heart{
-    position: relative;
-    
-}
-header .fa-bag-shopping{
-    position: relative;
-    
-}
 header{
     display: flex;
     margin: 0px 30px;
@@ -78,7 +74,7 @@ header{
 }
 .Fashion{
     margin: 35px;
-    position: relative;
+    display:flex;
 }
 .heading h4{
     color:gray;
@@ -99,9 +95,7 @@ header{
     top:100px;
 }
 .homeimage{
-    position: absolute;
-    right:10px;
-    top:20px;
+    margin-left: 100px;
 }
 .heading button{
     font-size: 15px;
@@ -116,6 +110,7 @@ header{
 }
 .line1{
     margin-top:100px;
+    
 
 }
 .popular{
@@ -125,12 +120,11 @@ header{
     margin-bottom: 0px;
 }
 .categories{
-    display: inline;
-    
+    display: inline;   
 }
 .sidebuttons{
     margin-bottom: 20px;
-    margin-left: 1160px;
+    margin-left: 1150px;
 }
 .sidebuttons .lessthan{
     height: 28px;
@@ -193,7 +187,7 @@ header{
     margin: 15px 35px;
     display: flex;
     flex-wrap: wrap;
-    gap:20px;
+    gap:15px;
 }
 .New{
     border:1px solid rgb(38, 127, 100);
