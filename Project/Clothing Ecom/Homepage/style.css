@@ -72,6 +72,10 @@ header{
     right:58px;
     border-radius: 100%;
 }
+a:active,
+a:hover {
+  color: rgb(46, 93, 72);
+}
 .Fashion{
     margin: 35px;
     display:flex;
@@ -322,6 +326,29 @@ header{
     width:25px;
     color:white;
 }
+.shopping-bag {
+    position: relative;
+  }
+  
+  .cart-icon {
+    position: relative;
+    padding: 6px 10px;
+    background-color: rgb(34, 116, 105);
+    color: white;
+    opacity: 0;
+    bottom: 40px;
+    left: 55px;
+  }
+  .shopping-bag:hover .cart-icon {
+    background-color: rgb(34, 116, 105);
+    opacity: 1;
+  }
+  
+  .shopping-bag:hover .fa-bag-shopping {
+    background-color: rgb(34, 116, 105);
+  }
+  
+  
 .line3{
     margin-top: 30px;
 }

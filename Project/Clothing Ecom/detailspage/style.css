@@ -138,3 +138,69 @@ header{
 .additional-info table{
     width: 100%;
 }
+.footer-head{
+    display: flex;
+    border:none;
+    background-color: rgb(100, 183, 149);
+    margin-top: 50px;
+}
+.footer-head img{
+    margin-left: 30px;
+    margin-top: 32px;
+}
+.footer-head h4{
+    margin-left: 5px;
+    margin-top: 35px;
+}
+.footer-head h5{
+    margin-left: 200px;
+    margin-top: 35px;
+}
+.footer-head input{
+    margin-bottom: 25px;
+}
+.footer-head button{
+    background-color: black;
+    color: white;
+    height:32px;
+    width:80px;
+    margin-top: 30px;
+    border: none;
+}
+li{
+    list-style-type: none;
+}
+.footer{
+    display:flex;
+    gap:70px;
+    margin-top: 30px;
+}
+.footer-body #contact{
+    color: grey;
+    font-size: small;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+.footer-body #Address{
+    color:rgb(38, 127, 100);
+    margin-bottom: 5px;
+}
+.footer-body #head{
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.footer-body #info{
+    margin-bottom: 15px;
+}
+.Follow{
+    margin-left: 30px;
+}
+.Follow p{
+    color: grey;
+    margin: 5px 0px;
+}
+.Follow .imag{
+    display:flex;
+
+}
+
