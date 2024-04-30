@@ -7,12 +7,11 @@ body{
     gap: 25px;
     padding-left: 20px;
     padding-right: 40px;
-    background-color: #93ccc4;
-      
+    background-color: #93ccc4;  
 }
 .header{
-    display :flex;
-    
+    display :flex;   
+    margin: 0px 30px;
 }
 .logo img{
     margin-left: 10px;
@@ -20,7 +19,7 @@ body{
 }
 .nav ul{
     display: flex;
-    gap: 35px;
+    gap: 25px;
     list-style-type: none;
 }
 .nav ul li a{
@@ -48,13 +47,20 @@ input[type="text"]{
 }
 header .fa-magnifying-glass{
     position: absolute;
-    right:164px;
+    right:174px;
     top: 96px;
+    color: black;
 }
-header{
-    display: flex;
-    margin: 0px 30px;
+
+header .fa-heart{
+    position: relative;
+    
 }
+header .fa-bag-shopping{
+    position: relative;
+    
+}
+
 .notification .not1{
     display: inline;
     background-color: green;
@@ -81,9 +87,20 @@ header{
     right:58px;
     border-radius: 100%;
 }
-a:active,
-a:hover {
-  color: rgb(46, 93, 72);
+.nav .shopnow{
+    color: rgba(25, 135, 88, 0.742);
+}
+.nav .Account{
+    color: rgba(25, 135, 88, 0.742);
+}
+.nav .compare{
+    color: rgba(25, 135, 88, 0.742);
+}
+.nav .login{
+    color: rgba(25, 135, 88, 0.742);
+}
+.icons button a{
+      color :black;
 }
 .Fashion{
     margin: 35px;
@@ -123,8 +140,9 @@ a:hover {
 }
 .line1{
     margin-top:100px;
-    
-
+    display: flex;
+    gap: 1000px;
+    margin-bottom: 30px;
 }
 .popular{
     margin-left: 35px;
@@ -136,8 +154,7 @@ a:hover {
     display: inline;   
 }
 .sidebuttons{
-    margin-bottom: 20px;
-    margin-left: 1150px;
+    margin-top: 10px;
 }
 .sidebuttons .lessthan{
     height: 28px;
@@ -196,22 +213,26 @@ a:hover {
     color:rgb(38, 127, 100);
     border: none;
 }
+.line{
+    margin: 50px 40px;
+}
 .card2{
     margin: 15px 35px;
     display: flex;
     flex-wrap: wrap;
-    gap:15px;
+    gap:20px;
 }
 .New{
     border:1px solid rgb(38, 127, 100);
     border-radius: 15px;
-    flex-grow: 1;
+    
     margin-top: 20px;
 }
 .New img{
-    padding:15px;
+    padding: 15px;
     border-radius: 15px;
 }
+
 .New p{
     font-size: small;
     color: rgb(188, 188, 188);
@@ -227,18 +248,107 @@ a:hover {
     margin-bottom: 10px;
     font-size: 10px;
 }
-.New span{
+.New .addToCart{
+    gap: 100px;
+}
+.New span {
     margin-left: 16px;
     font-size: 18px;
     color: rgb(38, 127, 100);
 }
+
 .New span strike{
     color: rgba(112, 98, 98, 0.79);
     font-size: 13px;
 }
+
+.New span .shopping-bag i{
+    background-color: #93ccc4;
+    border: 1px solid rgb(38, 127, 100);
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+}
 .new-header{
     position:relative;
 }
+
+.second-img {
+    position: absolute;
+    transition: all 1s ease-out;
+    transform: scale(1.1); 
+    top: 0;
+    left: 0;
+    z-index: 1;
+    opacity:0;
+}
+.new-header:hover .first-img {
+    opacity: 0;
+}
+  
+.new-header:hover .second-img {
+    opacity: 1;
+  }
+
+.new-header:hover .wishlist-icons {
+    opacity: 1;
+} 
+.wishlist-icons {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    left: 15%;
+    gap: 20px;
+    z-index: 2;
+    text-align: center;
+  }
+  
+  .wishlist-icons i {
+    color: #46504b;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: white;
+  }
+  
+  .wishlist-icons i:hover {
+    background-color: rgb(83, 170, 158);
+  }
+  
+  .first-img {
+    opacity: 1;
+  }
+  .wishlist-icons {
+    opacity: 0;
+  }
+  .desc1,
+  .desc2,
+  .desc3 {
+    padding: 6px 10px;
+    background-color: rgb(70, 142, 132);
+    opacity: 0;
+    position: absolute;
+    bottom: 50px;
+    left: -10px;
+
+  }
+  
+ 
+  .icons:hover .desc1 {
+    opacity: 1;
+    color: white;
+  }
+  .icons:hover .desc2 {
+    opacity: 1;
+    color: white;
+    left:30px;
+  }
+  .icons:hover .desc3 {
+    opacity: 1;
+    color: white; 
+    left:120px;
+  }
 .New .new-header .Hot1{
     position: absolute;
     top: 10px;
@@ -420,7 +530,291 @@ a:hover {
     font-size: small;
     margin-left: 5px;
 }
+.Page{
+    display:flex;
+    background-color: lightgray;
+    height:70px;
+    width: 100%;
+}
+.Page .home{
+    margin-left: 30px;
+}
+.Page p{
+    color:rgba(25, 135, 88, 0.742) ;
+    padding:0px 5px;
+    margin-top: 25px;
+}
+form{
+    display: flex;
+    margin:50px 40px;
+    gap:50px
+}
+.Login1{
+    border: 0.5px solid grey;
+    width:550px;
+    height:300px;
+    padding:25px;
+}
+.Login2{
+    border: 0.5px solid grey;
+    width:550px;
+    height: 450px;
+    padding:25px;
+}
+form h3{
+    margin-top: 0px;
+}
+form .input{
+    margin: 20px 20px;
+    height:20px;
+    width:90%;
+}
+form .button1{
+    margin: 10px 20px;
+    height:35px;
+    width:80px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(8, 77, 47, 0.742);
+}
+form .button2{
+    margin: 10px 20px;
+    height:35px;
+    width:150px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(8, 77, 47, 0.742);
+}
+main{
+    display: flex;
+    margin: 45px ;
+    gap: 20px;
+}
+.table1{
+    width: 40%;
+}
+.table2{
+    height:150px;
+
+}
+.numbers{
+    margin: 50px 535px;
+    
+}
+.numbers #num1{
+    border: none;
+    display: inline-block;
+    text-align: center;
+    color: white;
+    height:20px;
+    width:25px;
+    background-color: rgba(4, 52, 31, 0.918); 
+}
+.numbers #num2{
+    font-size: 10px;
+}
+.numbers span{
+    margin-right: 10px;
+}
+.container{
+    padding-bottom: 30px;
+}
+.container th{
+    border-bottom: 1px solid grey;
+    
+}
+.container td{
+    border-bottom: 1px solid grey;
+}
+td input[type="text"]{
+    height:10px;
+    width:30px;
+    margin:0px;
+}
+td h4{
+    color: rgba(15, 63, 43, 0.986);
+}
+.details{
+    margin:45px;
+}
+.details1{
+    display:flex;
+    gap:15px;
+}
+.shirt-details{
+    color: rgba(7, 39, 25, 0.742);
+}
+.color i{
+    margin-left: 5px;
+    font-size: larger;
+}
+.shirt-size{
+    margin: 40px 0px;
+}
+.shirt-size .size,.size-1{
+    border: 1px solid grey;
+    padding: 5px;
+}
+.addtocart .button1{
+    background-color: rgba(7, 63, 38, 0.89);
+    border: none;
+    border-radius: 5px;
+    padding: 5px 15px;
+    height: 35px;
+    color: white;
+}
+.addtocart .button2{
+    height: 33px;
+}
+.info{
+    margin: 30px 0px;
+}
+.info span{
+    font-size: large;
+    font-weight: bold;
+}
+.additional-info{
+    color: rgba(7, 39, 25, 0.742);
+}
+.additional-info table{
+    width: 100%;
+}
+.review-1{
+    display: flex;
+    gap: 20px;
+}
+.comment{
+    margin-top: 25px;
+}
+.Name{
+    display: flex;
+    margin-top: 30px;
+    gap: 10px;
+}
+.Name input{
+     width:50%;
+     height: 30px;
+}
+.container{
+    width:88%;
+    padding:60px 70px;
+   
+}
+.table{
+    border-color:grey;
+}
+td{
+    text-align: center;
+}
+button{
+    background-color: rgba(4, 77, 45, 0.957);
+    border: none;
+    height:30px;
+}
+button a{
+    color:white;
+    text-decoration: none;
+    padding: 0px 5px;
+}
+tr .name{
+    color: rgba(4, 77, 45, 0.957);
+    font-weight: bold;
+}
+button{
+    font-size: 15px;
+    padding: 8px 15px 8px 15px;
+    background-color:rgb(11, 65, 48) ;
+    border: none;
+    border-radius: 2px;
+    margin-top: 20px;
+    color: white;
+}
+.table1{
+    margin:30px 100px;
+    text-align: center;
+    width: 80%;
+}
+.container{
+    padding-bottom: 30px;
+}
+.container th{
+    border-bottom: 1px solid grey;
+    
+}
+.container td{
+    border-bottom: 1px solid grey;
+}
+td h4{
+    color: rgba(15, 63, 43, 0.986);
+}
+
+.mainbutton{
+    display:flex;
+    margin-left: 820px;
+    gap:15px;
+}
+.mainbutton .button{
+    background-color: rgba(15, 63, 43, 0.986);
+    color: white;
+    padding:10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    font-size: small;
+}
+.fingerprint{
+    margin-left: 600px;
+}
+.Cart{
+    display: flex;
+    width:35%;
+    margin: 20px 50px;
+    gap:15px;
+}
+.calculate h3,.Coupon h4{
+    margin-bottom: 0px;
+    margin-top: 30px;
+}
+.calculate .address1{
+    margin-left: 0px;
+    width:97%;
+}
+.calculate .address2{
+    display: flex;
+    gap:10px;
+    width:600px;
+}
+.calculate .address2 input{
+    margin-left: 0px;
+}
+.calculate button,.Total button{
+    background-color: rgba(15, 63, 43, 0.986);
+    color: white;
+    padding:10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+}
+.Coupon .address3{
+    margin-left: 0px;
+}
+.Total{
+    border:1px solid grey;
+    padding:20px;
+    margin-top: 30px;
+    height: 250px;
+}
+.Total h3{
+    margin-top: 0px;
+}
+.Total table{
+    width:480px;
+    
+}
 .footer-head{
+
     display: flex;
     border:none;
     background-color: rgb(100, 183, 149);
@@ -447,6 +841,12 @@ a:hover {
     width:80px;
     margin-top: 30px;
     border: none;
+    cursor:pointer;
+}
+.footer-head button:hover{
+    background-color: white;
+    color: rgb(38, 127, 100);
+    border: 2px solid black;
 }
 li{
     list-style-type: none;
@@ -483,4 +883,8 @@ li{
 .Follow .imag{
     display:flex;
 
+}
+.footer li:hover{
+        color: #1e8e70b3;
+        
 }
